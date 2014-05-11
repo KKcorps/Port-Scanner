@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Port Scanner</title>
+<!--<script src="port_check.js"></script>-->
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+</body>
+</html>
+<script>
+open_ports = ['a','b','c'];
+	for (var i = 0; i < open_ports.length; i++) {
+	$('body').append("<div class="+open_ports[i]+"></div>" );
+	//$('body').Text(open_ports[i]);	
+	};
+	//$('.'+open_ports[1]).append("<div></div>");
+	for (var i = 0; i < open_ports.length; i++) {
+	//$('body').append("<div id='"+open_ports[i]+"'></div>" );
+	var f = open_ports[i];
+	$('.'+open_ports[i]).html("<p>"+open_ports[i]+"</p>");	
+	};
+
+</script>
+
